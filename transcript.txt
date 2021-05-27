@@ -1,0 +1,15 @@
+[20:45:30] - Dźwięk alarmu pożarowego
+[20:45:32] - Alarm wyłączony
+[20:45:40] - Co jest?
+[20:45:42] - Pożarowy. Nie wiem gdzie.
+[20:45:50] - Halo, wieża? SP218, mamy pożar na pokładzie.
+[20:45:55] - Rozumiem, co się pali?
+[20:46:15] - Wszystkie systemy w porządku. Nie widzę ognia.
+[20:46:30] - To prawdopodobnie awaria systemu ostrzegania. 
+[20:48:20] - Dźwięk awarii systemów eletrycznych
+[20:48:24] - Pali się lewe skrzydło!
+[20:48:26] - SP218, Mayday, Mayday!
+[20:48:40] - [Niezidentyfikowane hałasy]
+[20:49:50] - [Dźwięk eksplozji, krzyk] Wyrzućcie skrzynię!
+[20:50:20] - [Głośny huk]
+[KONIEC TAŚMY]
