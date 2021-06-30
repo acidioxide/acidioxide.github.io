@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+</body>
+<script>
+    var d = new Date();
+    var dateiso = d.toISOString();
+    var y = dateiso.substr(0, 4);
+    var m = dateiso.substr(5, 2);
+    var d = dateiso.substr(8, 2);
+    var dateform = y + m + d;
+    var linkd = "https://www.meteo.pl/um/metco/mgram_pict.php?ntype=0u&fdate=" + dateform + "00&row=360&col=178&lang=pl";
+    var linkk = "https://www.meteo.pl/um/metco/mgram_pict.php?ntype=0u&fdate=" + dateform + "00&row=466&col=232&lang=pl";
+
+    var x = document.createElement("IMG");
+    x.setAttribute("src", linkd);
+    x.setAttribute("width", 1000);
+    document.body.appendChild(x);
+
+    var y = document.createElement("IMG");
+    y.setAttribute("src", linkk);
+    y.setAttribute("width", 1000);
+    document.body.appendChild(y);
+</script>
+
+</html>
