@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <body>
 
 </body>
@@ -9,9 +10,17 @@
     var y = dateiso.substr(0, 4);
     var m = dateiso.substr(5, 2);
     var d = dateiso.substr(8, 2);
+    var h = dateiso.substr(11, 2);
     var dateform = y + m + d;
-    var linkd = "https://www.meteo.pl/um/metco/mgram_pict.php?ntype=0u&fdate=" + dateform + "00&row=360&col=178&lang=pl";
-    var linkk = "https://www.meteo.pl/um/metco/mgram_pict.php?ntype=0u&fdate=" + dateform + "00&row=466&col=232&lang=pl";
+    var timeform = 6 * (Math.floor((h - 4.5) / 6));
+    var linkd = "https://www.meteo.pl/um/metco/mgram_pict.php?ntype=0u&fdate=" + dateform + timeform.toLocaleString('en-US', {
+        minimumIntegerDigits: 2,
+        useGrouping: false
+    }) + "&row=360&col=178&lang=pl";
+    var linkk = "https://www.meteo.pl/um/metco/mgram_pict.php?ntype=0u&fdate=" + dateform + timeform.toLocaleString('en-US', {
+        minimumIntegerDigits: 2,
+        useGrouping: false
+    }) + "&row=466&col=232&lang=pl";
 
     var x = document.createElement("IMG");
     x.setAttribute("src", linkd);
@@ -21,7 +30,7 @@
     var y = document.createElement("IMG");
     y.setAttribute("src", linkk);
     y.setAttribute("width", 1000);
-    document.body.appendChild(y);
+    document.body.appendChild(y);
 </script>
 
 </html>
